@@ -1,4 +1,4 @@
-from oop.ui import get_valid_key
+from ui import get_valid_key
 
 
 class Game:
@@ -21,6 +21,7 @@ class Game:
 
     def play(self):
         while not self._game_finished:
+            self._clear()
             self._ui.print(self._map)
 
             self._move_ghosts()
@@ -54,5 +55,8 @@ class Game:
             y += 1
 
         self._pacman.move(self._map, self, x, y)
+
+    def _clear(self):
+        print("\033c", end="")
 
 

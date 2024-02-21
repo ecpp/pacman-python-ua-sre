@@ -1,4 +1,4 @@
-from oop.pieces import build_piece, Empty
+from pieces import build_piece, Empty
 
 
 class Map:

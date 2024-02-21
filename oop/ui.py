@@ -1,10 +1,11 @@
 from termcolor import colored
+import readchar
 
 
 def get_valid_key():
     valid_keys = ['a', 's', 'w', 'd']
     while True:
-        key = input()
+        key = readchar.readkey()
         if key in valid_keys:
             return key
 

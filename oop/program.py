@@ -1,6 +1,6 @@
-from oop.game import Game
-from oop.map import create_map
-from oop.ui import AsciiArtUI
+from game import Game
+from map import create_map
+from ui import AsciiArtUI
 
 map = [
     "|--------|",
